@@ -15,7 +15,7 @@ export default function SubmitButton({
     ) : (
       <button 
         aria-label="Generate video"
-        className="text-amber-500 disabled:text-gray-400 disabled:cursor-not-allowed"
+        className="disabled:text-gray-400 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none text-amber-500 rounded-sm"
         disabled={!isActive || pending}
         type="submit" 
       >
