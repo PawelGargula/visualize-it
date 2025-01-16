@@ -11,7 +11,7 @@ function App() {
   const [value, setValue] = useState<string>('');
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-dvh flex flex-col">
      <Header />
       <main className="flex-1 container mx-auto px-4 py-8">
         <form action={async (formData) => {
