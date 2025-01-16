@@ -1,6 +1,8 @@
 # Visualize it
 
-Tell us your story, and we'll bring it to life visually
+Tell us your story, and we'll bring it to life visually with AI.
+
+[Deployed at Netlify](https://visualize-it-with-ai.netlify.app/)
 
 ## Tech stack
 

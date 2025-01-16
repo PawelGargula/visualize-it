@@ -14,7 +14,14 @@ function App() {
     <div className="min-h-screen flex flex-col">
      <Header />
       <main className="flex-1 container mx-auto px-4 py-8">
-        <form action="">
+        <form action={async (formData) => {
+          await new Promise((resolve) => {
+            setTimeout(() => {
+              console.log('Form submitted:', formData.get('chat'));
+              resolve(true);
+            }, 5000);
+          });
+        }}>
           <div className="rounded-2xl shadow-lg">
             <TextArea 
               maxLength={MAX_CHARS}
