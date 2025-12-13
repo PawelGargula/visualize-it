@@ -11,12 +11,12 @@ function App() {
   const [value, setValue] = useState<string>('');
 
   return (
-    <div className="min-h-dvh flex flex-col bg-gradient-to-br from-white via-blue-50 to-white">
+    <div className="min-h-dvh flex flex-col bg-gradient-to-br from-white via-yellow-50 to-white">
       <Header />
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <section className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-blue-800 mb-4">
+            <h1 className="text-4xl font-bold mb-4" style={{color: '#D4AF37'}}>
               Transform Your Stories into Visual Masterpieces
             </h1>
             <p className="text-xl text-gray-600 mb-8">
@@ -27,7 +27,7 @@ function App() {
           <section className="bg-white rounded-2xl shadow-lg p-8 mb-12">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h2 className="text-2xl font-semibold text-blue-700">How It Works</h2>
+                <h2 className="text-2xl font-semibold" style={{color: '#BF9B30'}}>How It Works</h2>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
                   <li>Write a detailed description of your scene</li>
                   <li>Our AI generates a unique visualization</li>
@@ -35,11 +35,11 @@ function App() {
                 </ul>
               </div>
               <div className="space-y-4">
-                <h2 className="text-2xl font-semibold text-blue-700">Token System</h2>
+                <h2 className="text-2xl font-semibold" style={{color: '#BF9B30'}}>Token System</h2>
                 <div className="text-gray-700">
                   <p>Each visualization costs tokens:</p>
                   <p className="font-bold">5 tokens per generation</p>
-                  <a href="#" className="text-blue-600 hover:underline">Purchase Tokens</a>
+                  <a href="#" className="hover:underline" style={{color: '#D4AF37'}}>Purchase Tokens</a>
                 </div>
               </div>
             </div>
