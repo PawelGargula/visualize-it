@@ -3,11 +3,13 @@ import { useFormStatus } from "react-dom";
 export default function TextArea({
   maxLength,
   value,
-  setValue
+  setValue,
+  placeholder
 } : {
   maxLength: number
   value: string
   setValue: React.Dispatch<React.SetStateAction<string>>
+  placeholder?: string
 }) {
   const { pending } = useFormStatus();
   return (
@@ -20,7 +22,7 @@ export default function TextArea({
         id="chat" 
         maxLength={maxLength}
         name="chat" 
-        placeholder="Type your story here..."
+        placeholder={placeholder || "Type your story here..."}
         spellCheck={true}
         value={value}
         onChange={(e) => setValue(e.target.value)}
