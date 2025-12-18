@@ -70,7 +70,7 @@ function App() {
         </div>
       </main>
       <Footer />
-      <video src="/video.mp4" autoPlay={true} loop={true} playsInline={true} className="w-full h-full object-cover" width={672} height={378} muted={true} preload="metadata"> Download the <a href="/video.mp4" className="underline text-blue-600">video file</a>. </video>
+      <video src="/video.mp4" autoPlay={true} loop={true} className="w-full h-full object-cover" width={672} height={378} muted={true} preload="metadata"> Download the <a href="/video.mp4" className="underline text-blue-600">video file</a>. </video>
     </div>
   )
 }
